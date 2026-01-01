@@ -1,0 +1,14 @@
+h1{
+    margin: 100px 100px;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    font-style: oblique;
+    color: seagreen;
+}
+p{
+    margin: 100px 100px;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: green;
+}
