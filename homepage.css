@@ -1,14 +1,64 @@
-h1{
-    margin: 100px 100px;
-    padding: 50px 50px;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-style: oblique;
-    color: seagreen;
 }
-p{
-    margin: 100px 100px;
-    padding: 50px 50px;
-    box-sizing: border-box;
-    font-style: italic;
-    color: green;
+body {
+    background-color: #041c02;
+    font-family: 'Arial', sans-serif;
+    color: #171616;
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.olganza {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 20px;
+}
+.olgatxt {
+    flex: 1 1 60%;
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+}
+.olgatxt a {
+    color: #2a5470;
+    text-decoration: none;
+}
+.olgaimg {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+.olgaimg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 700px) {
+    .olganza {
+        flex-direction: column;
+        padding: 12px;
+    }
+    .olgaimg, .olgatxt {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+    }
+    .olgatxt { text-align: center; }
 }
